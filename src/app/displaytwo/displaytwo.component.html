@@ -1,0 +1,66 @@
+
+
+<div class="panel panel-default" id="test">
+    <div class="panel-heading">Weather Info of  {{ cityWeather.cityName }} </div>
+  
+   <div class="panel-body" id="test2">
+     <h3 class="text-right text-uppercase">{{ cityWeather.cityName }}</h3>
+     <h4 class="text-justify">{{ cityWeather.Date}}</h4>
+     
+     <h3 class="text-center"> {{ cityWeather.weatherKind }}</h3>
+     <h4 class="text-center"> Min{{ cityWeather.tempMin }} &deg;C</h4>
+     <h4 class="text-center">Max {{ cityWeather.tempMax }} &deg;C</h4>
+     <h4 class="text-center">Humidity {{cityWeather.humidity}} %</h4>
+    <br />
+    </div>
+    </div>
+
+    <!-- displaying Forecast of 5 days  -->
+    <div class="panel panel-default" id="test" >
+      <div class="panel-heading">4 days Weather Forecast </div>
+    <div class="table-responsive ">
+  
+  <table class="table  table-hover table-bordered table-condensed text-center ">
+  <tr> 
+     <th class="text-center">Day</th>
+     <th class="text-center">Status</th>      
+     <th class="text-center">MinTemp</th>      
+     <th class="text-center">MaxTemp</th>
+      
+</tr>
+  <tr>
+      <td>{{ cityWeatherDay2.Date}}</td>
+      <td>{{ cityWeatherDay2.weatherKind }}</td>
+      <td>{{ cityWeatherDay2.tempMin }} &deg;C</td>
+      <td>{{ cityWeatherDay2.tempMax }} &deg;C</td>
+      
+  </tr>
+  <tr>
+    <td>{{ cityWeatherDay3.Date}}</td>
+    <td>{{ cityWeatherDay3.weatherKind }}</td>
+    <td>{{ cityWeatherDay3.tempMin }} &deg;C</td>
+    <td>{{ cityWeatherDay3.tempMax }} &deg;C</td>
+  </tr>
+  <tr>
+    <td>{{ cityWeatherDay4.Date}}</td>
+    <td>{{ cityWeatherDay4.weatherKind }}</td>
+    <td>{{ cityWeatherDay4.tempMin }} &deg;C</td>
+    <td>{{ cityWeatherDay4.tempMax }} &deg;C</td>
+  </tr>
+  <tr>
+    <td>{{ cityWeatherDay5.Date}}</td>
+    <td>{{ cityWeatherDay5.weatherKind }}</td>
+    <td>{{ cityWeatherDay5.tempMin }} &deg;C</td>
+    <td>{{ cityWeatherDay5.tempMax }} &deg;C</td>
+  </tr>
+  
+  
+  
+</table>
+  
+  
+  
+  
+  </div>
+     
+  </div>

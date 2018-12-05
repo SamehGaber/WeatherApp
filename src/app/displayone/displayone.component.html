@@ -1,0 +1,35 @@
+
+
+<div [hidden]="!hideproperity" class="panel panel-default" id="test">
+  <div class="panel-heading">Weather Info </div>
+
+ <div class="panel-body " id="test2">
+   <h3 class="text-right text-uppercase">{{ WeatherNow.cityName }}</h3>
+   <h4 class="text-justify">{{ WeatherNow.Date}}</h4>
+   <h3 class="text-center"> {{ WeatherNow.weatherKind }}</h3>
+   <h4 class="text-center"> Min {{ WeatherNow.tempMin }}&deg;C</h4>
+   <h4 class="text-center">Max {{ WeatherNow.tempMax }}&deg;C</h4>
+   <h4 class="text-center">Humidity {{WeatherNow.humidity}} %</h4>
+  <br />
+
+    
+    <!-- searching for a city form -->
+<form class="form-hotizontal " id="search" (ngSubmit)="onSubmit(form)" #form="ngForm">
+ <div class="form-group   form-horizontal">
+   <div class="col-xs-6">
+     <input type="text"  id="city" class="form-control" placeholder="please enter a city .." ngModel name="cityName" >
+   </div>
+     <div class="col-xs-3 ">
+      <button type="submit" class=" form-control btn btn-default" routerLink = "/main" routerLinkActive="active">Search</button>
+     </div>
+ </div>
+
+</form> 
+    
+    
+    
+    
+   </div> 
+</div>
+
+
